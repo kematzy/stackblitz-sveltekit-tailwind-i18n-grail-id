@@ -1,0 +1,78 @@
+/**
+ * begin: src/css/base/debug.css
+ *
+ * @format
+ */
+
+@layer base {
+	body::before {
+		border-bottom-left-radius: 0.25rem;
+		border-bottom-right-radius: 0.25rem;
+		font-size: 0.75rem;
+		margin: 0;
+		padding: 0.125rem 0.75rem;
+		position: fixed;
+		top: 0px;
+		z-index: 10000;
+	}
+	@media screen and (max-width: 639px) {
+		body::before {
+			content: ' ';
+			background-color: hsla(60, 100%, 60%, 1);
+			color: #fff;
+			height: 0.25rem;
+			width: 100%;
+			transition: left ease-in-out 100ms;
+		}
+	}
+	@media screen and (min-width: 640px) {
+		body::before {
+			content: 'sm: 640px';
+			background-color: hsla(0, 70%, 30%, 0.8);
+			color: #fff;
+			left: 50%;
+			transition: left ease-in-out 100ms;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		body::before {
+			content: 'md: 768px';
+			background-color: hsla(270, 60%, 50%, 0.75);
+			color: #fff;
+		}
+	}
+	@media screen and (min-width: 1024px) {
+		body::before {
+			content: 'lg: 1024px';
+			background-color: hsla(230, 60%, 50%, 0.75);
+			color: #fff;
+		}
+	}
+	@media screen and (min-width: 1280px) {
+		body::before {
+			content: 'xl: 1280px';
+			background-color: hsla(120, 60%, 35%, 0.75);
+			color: #fff;
+		}
+	}
+	@media screen and (min-width: 1536px) {
+		body::before {
+			content: '2xl: 1536px';
+			background-color: hsla(32, 100%, 44%, 0.75);
+			color: #fff;
+		}
+	}
+	@media screen and (min-width: 1920px) {
+		body::before {
+			content: '3xl: > 1920px';
+			background-color: hsla(290, 60%, 40%, 0.75);
+			color: #fff;
+		}
+	}
+	pre {
+		white-space: pre-wrap;
+		word-wrap: break-word;
+	}
+}
+
+/* /end: src/css/base/debug.css */

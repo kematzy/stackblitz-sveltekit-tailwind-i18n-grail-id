@@ -1,0 +1,75 @@
+/* begin: src/css/base.css */
+
+@import './base/scrollbars.css';
+@import './base/debug.css';
+
+@layer base {
+	body {
+		@apply bg-bkgr p-0 text-fg selection:bg-primary/70 selection:text-black;
+
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	/* #### TYPOGRAPHY #### */
+	h1 {
+		@apply text-4xl font-medium mb-4;
+		@apply text-primary;
+	}
+	h2 {
+		@apply text-2xl font-medium mb-4;
+		@apply text-primary/80;
+	}
+
+	p {
+		@apply mb-4 text-fg/90;
+	}
+
+	/* the outer bounds */
+	#page-wrapper {
+		@apply relative h-full flex flex-col;
+	}
+
+	.section-wrapper {
+		@apply relative h-full 2xl:container 2xl:mx-auto;
+		@apply border-x border-transparent 2xl:border-white/10;
+		/* @apply bg-green-600; */
+	}
+
+	/*  */
+	#navbar {
+		@apply flex items-center justify-end pb-0 pr-4 w-full;
+		@apply sticky h-12 top-0 right-0 z-30;
+		@apply bg-bkgr text-fg;
+		/* @apply shadow shadow-fg/10; */
+	}
+
+	#header-logo {
+		@apply sticky z-40 right-0 top-0 h-auto -mt-12;
+		/* we are setting the width here in order to not interfere with the navbar links */
+		/* width: 12rem; */
+		width: 4rem;
+
+		& button {
+			@apply relative py-4 px-4 pr-4 rounded-br-lg lg:py-4 lg:px-4 lg:pr-8;
+			/* @apply shadow shadow-fg/10; */
+			@apply text-fg bg-bkgr hover:bg-primary hover:text-white;
+			/* @apply backdrop-blur; */
+		}
+
+		& #logo {
+			@apply pl-4;
+		}
+	}
+
+	#btn-modal-share,
+	#btn-modal-menu {
+		@apply px-0 z-40;
+
+		& button {
+			@apply py-2 px-2 uppercase;
+			@apply text-fg/50 hover:text-primary hover:bg-bkgr-s2/10;
+		}
+	}
+}
+
+/* end: src/css/base.css */

@@ -1,0 +1,30 @@
+/* begin: src/css/base/scrollbars.css */
+
+@layer base {
+	::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+	::-webkit-scrollbar-track {
+		background: rgb(28, 25, 23);
+	}
+	::-webkit-scrollbar-thumb {
+		/* background: rgb(38, 32, 27); */
+		background: rgb(71, 59, 46);
+		border-radius: 4px;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: rgb(137, 114, 85);
+	}
+	.scroller {
+		overflow: scroll;
+		scrollbar-color: rgb(180 200 195) rgb(28, 25, 23);
+		scrollbar-width: auto;
+	}
+	html {
+		scrollbar-color: rgb(180 200 195) rgb(28, 25, 23);
+		scrollbar-width: auto;
+	}
+}
+
+/* /end: src/css/base/scrollbars.css */

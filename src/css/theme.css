@@ -1,0 +1,114 @@
+/* begin: src/css/theme.css */
+
+@layer base {
+	/* NOTE: the order of these are important, otherwise the theme changes won't work correctly */
+
+	:root {
+		/* ## GLOBAL: PRIMARY */
+		--colors-primary-t3: 255 204 128;
+		--colors-primary-t2: 255 184 77;
+		--colors-primary-t1: 255 163 25;
+		--colors-primary: 255 153 0;
+		--colors-primary-s1: 230 138 0;
+		--colors-primary-s2: 179 107 0;
+		--colors-primary-s3: 128 77 0;
+
+		/* ## SECONDARY */
+		--colors-secondary-t3: 42 74 168;
+		--colors-secondary-t2: 36 70 163;
+		--colors-secondary-t1: 28 66 158;
+		--colors-secondary: 19 63 154;
+		--colors-secondary-s1: 12 58 149;
+		--colors-secondary-s2: 6 54 144;
+		--colors-secondary-s3: 0 50 139;
+
+		/* ## SUCCESS */
+		--colors-success-t3: 73 150 97;
+		--colors-success-t2: 68 145 93;
+		--colors-success-t1: 63 141 88;
+		--colors-success: 58 136 84;
+		--colors-success-s1: 53 131 80;
+		--colors-success-s2: 48 127 75;
+		--colors-success-s3: 43 122 71;
+
+		/* ## WARNING */
+		--colors-warning-t3: 170 130 53;
+		--colors-warning-t2: 165 125 48;
+		--colors-warning-t1: 160 121 44;
+		--colors-warning: 155 116 39;
+		--colors-warning-s1: 150 112 34;
+		--colors-warning-s2: 145 107 30;
+		--colors-warning-s3: 140 103 25;
+
+		/* ## DANGER */
+		--colors-danger-t3: 136 65 64;
+		--colors-danger-t2: 131 61 60;
+		--colors-danger-t1: 126 56 56;
+		--colors-danger: 121 52 52;
+		--colors-danger-s1: 116 48 48;
+		--colors-danger-s2: 111 43 44;
+		--colors-danger-s3: 106 39 40;
+		--colors-danger-fg: 255 219 214;
+
+		/* ## INFO */
+		--colors-info-t3: 78 110 144;
+		--colors-info-t2: 73 106 139;
+		--colors-info-t1: 69 101 135;
+		--colors-info: 64 97 130;
+		--colors-info-s1: 59 93 125;
+		--colors-info-s2: 55 88 121;
+		--colors-info-s3: 50 84 116;
+	}
+
+	@media (prefers-color-scheme: light) {
+		:root {
+			/* --colors-bkgr: 244 248 252; */
+			--colors-bkgr-t3: 246 246 246;
+			--colors-bkgr-t2: 243 243 243;
+			--colors-bkgr-t1: 241 241 241;
+			--colors-bkgr: 138 238 238;
+			--colors-bkgr-s1: 233 233 233;
+			--colors-bkgr-s2: 167 167 167;
+			--colors-bkgr-s3: 131 131 131;
+			--colors-fg: 12 18 24;
+		}
+	}
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--colors-bkgr-t3: 133 135 139;
+			--colors-bkgr-t2: 100 102 107;
+			--colors-bkgr-t1: 66 69 76;
+			--colors-bkgr: 33 36 44;
+			--colors-bkgr-s1: 28 31 37;
+			--colors-bkgr-s2: 23 25 31;
+			--colors-bkgr-s3: 18 20 24;
+
+			--colors-fg: 244 248 252;
+		}
+	}
+
+	[data-theme='light'] {
+		--colors-bkgr-t3: 246 246 246;
+		--colors-bkgr-t2: 243 243 243;
+		--colors-bkgr-t1: 241 241 241;
+		--colors-bkgr: 238 238 238;
+		--colors-bkgr-s1: 228 228 228;
+		--colors-bkgr-s2: 167 167 167;
+		--colors-bkgr-s3: 131 131 131;
+		--colors-fg: 12 18 24;
+	}
+
+	[data-theme='dark'] {
+		--colors-bkgr-t3: 133 135 139;
+		--colors-bkgr-t2: 100 102 107;
+		--colors-bkgr-t1: 66 69 76;
+		--colors-bkgr: 33 36 44;
+		--colors-bkgr-s1: 28 31 37;
+		--colors-bkgr-s2: 23 25 31;
+		--colors-bkgr-s3: 18 20 24;
+
+		--colors-fg: 244 248 252;
+	}
+}
+
+/* /end: src/css/theme.css */

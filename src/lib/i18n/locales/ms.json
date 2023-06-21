@@ -1,0 +1,17 @@
+{
+	"flag": "🇲🇾",
+	"icon": "flag:my-4x3",
+	"iconCircle": "circle-flags:my",
+	"lang": {
+		"en": "English",
+		"ms": "Bahasa",
+		"zh": "中文"
+	},
+
+	"pages": {
+		"home": {
+			"h1": "Selamat datang ke penyelesaian pemula SvelteKit, Tailwind, i18n & Grail UI",
+			"subtitle": "Titik permulaan yang fleksibel untuk kebahagiaan pembangunan yang hebat"
+		}
+	}
+}

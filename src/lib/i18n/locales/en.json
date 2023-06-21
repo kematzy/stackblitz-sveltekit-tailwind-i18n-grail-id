@@ -1,0 +1,17 @@
+{
+	"flag": "🇬🇧",
+	"icon": "flag:gb-4x3",
+	"iconCircle": "circle-flags:gb",
+	"lang": {
+		"en": "English",
+		"ms": "Bahasa",
+		"zh": "中文"
+	},
+
+	"pages": {
+		"home": {
+			"h1": "Welcome to the SvelteKit, Tailwind, i18n & Grail UI starter solution",
+			"subtitle": "A flexible starting point for great development bliss"
+		}
+	}
+}

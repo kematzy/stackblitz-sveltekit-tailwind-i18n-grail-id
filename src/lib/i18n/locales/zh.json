@@ -1,0 +1,16 @@
+{
+	"flag": "🇨🇳",
+	"iconCircle": "circle-flags:cn",
+	"icon": "flag:cn-4x3",
+	"lang": {
+		"en": "English",
+		"ms": "Bahasa",
+		"zh": "中文"
+	},
+	"pages": {
+		"home": {
+			"h1": "欢迎使用 SvelteKit、Tailwind, i18n 和 Grail UI 入门解决方案",
+			"subtitle": "灵活的起点，成就伟大的发展"
+		}
+	}
+}

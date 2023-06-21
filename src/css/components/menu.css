@@ -1,0 +1,20 @@
+/* begin: src/css/components/menu.css */
+
+@layer components {
+	.btn-menu {
+		@apply text-xl px-2 py-0 rounded;
+		@apply bg-transparent text-fg/50 hover:text-primary;
+	}
+	.menu {
+		@apply bg-bkgr-s1 shadow-lg rounded z-10 w-max -mt-4 border border-fg/20 pb-4 px-0 outline-0;
+
+		& li {
+			@apply py-1 px-4 hover:bg-bkgr-t1 hover:cursor-pointer hover:bg-primary/20;
+		}
+	}
+	.menu-title {
+		@apply text-fg/60 my-2 px-2 text-xs uppercase;
+	}
+}
+
+/* /end: src/css/components/menu.css */

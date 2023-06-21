@@ -1,0 +1,15 @@
+/* begin: src/css/components.css */
+
+@import './components/menu.css';
+
+@layer components {
+	.btn-social {
+		@apply text-6xl mx-4;
+
+		& svg {
+			@apply m-4 text-fg/50 hover:text-primary hover:scale-150;
+		}
+	}
+}
+
+/* end: src/css/components.css */
