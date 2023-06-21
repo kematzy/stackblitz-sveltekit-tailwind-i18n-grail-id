@@ -16,7 +16,7 @@
 		use:useModal
 		{...$modalAttrs}
 		transition:slide="{{ axis: 'y', duration: 200 }}"
-		class="absolute top-0 left-0 right-0 w-full h-screen md:h-max z-20 bg-bkgr-s1 shadow-lg">
+		class="absolute top-0 left-0 right-0 w-full h-max z-20 bg-bkgr-s1 shadow-lg">
 		<!-- .modal-inner -->
 		<div class="modal-inner h-full">
 			<!-- .modal-header -->
@@ -36,7 +36,7 @@
 			<!-- .modal-contents -->
 			<div class="flex flex-col p-6">
 				<slot name="contents">
-					<div class="py-4 w-full mx-auto md:w-2/3 lg:w-4/5 grid grid-cols-3 md:grid-cols-4 xl:grid-cols-6 items-center justify-center">
+					<div class="py-4 w-full mx-auto md:w-4/5 lg:w-4/5 flex flex-wrap items-center justify-center">
             {#each shareButtonsConfigs as btn}
               <BtnShare opts={btn} />
             {/each}

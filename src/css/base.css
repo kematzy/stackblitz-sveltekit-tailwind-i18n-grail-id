@@ -19,6 +19,9 @@
 		@apply text-2xl font-medium mb-4;
 		@apply text-primary/80;
 	}
+	h3 {
+		@apply text-2xl mb-4 font-medium text-secondary;
+	}
 
 	p {
 		@apply mb-4 text-fg/90;
@@ -66,8 +69,81 @@
 		@apply px-0 z-40;
 
 		& button {
-			@apply py-2 px-2 uppercase;
+			@apply py-2 px-2 leading-none text-base uppercase;
 			@apply text-fg/50 hover:text-primary hover:bg-bkgr-s2/10;
+		}
+	}
+
+	#hero {
+		@apply relative w-full h-full;
+		height: 50rem;
+		/* @apply h-[45rem] sm:h-[45rem] lg:h-[45rem] xl:h-[50rem] 2xl:h-[60rem] 3xl:h-[70rem]; */
+		/* @apply h-full; */
+		/* adjust for #btn-menu causing space above the hero */
+		@apply -mt-12;
+		/* @apply bg-bkgr; */
+
+		/* this must be here to ensure the image is shown */
+		& .inner {
+			@apply relative w-full h-full;
+		}
+
+		& picture {
+			/* @apply absolute z-[1]; */
+			/* @apply fixed z-[1]; */
+			/* @apply 2xl:container 2xl:mx-auto; */
+
+			& source,
+			& img {
+				@apply absolute h-full z-[1] bg-black;
+				@apply opacity-80;
+				@apply w-full object-cover;
+			}
+		}
+
+		& #hero-contents {
+			@apply z-10;
+			@apply w-full absolute bottom-0 pt-16 pb-12 px-4 md:px-8 rounded-t-md text-center md:text-left;
+			@apply bg-gradient-to-t from-bkgr via-bkgr/50 via-70% to-transparent;
+			/* @apply bg-gradient-to-t from-hero-bg to-transparent; */
+			/* @apply bg-bkgr; */
+		}
+
+		& h1 {
+			@apply text-fg leading-none w-full xl:w-2/3;
+			font-size: clamp(2rem, 5vw, 3.5rem);
+
+			& small {
+				@apply font-medium block;
+			}
+		}
+
+		& .hero-subheadline {
+			@apply text-fg/70 mt-8 leading-tight lg:w-2/3;
+			font-size: clamp(1.25rem, 5vw, 2rem);
+		}
+	}
+
+	#cta {
+		@apply w-full;
+		/* @apply border-t border-gray-100/30; */
+		/* @apply bg-secondary-s60; */
+
+		& .inner {
+			@apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 pt-12 pb-16;
+
+			& div {
+				@apply py-2 px-8 col-span-1 w-full text-lg;
+
+				&:first-child {
+					@apply md:col-span-2 xl:col-span-1 md:w-4/5 lg:w-2/3 xl:w-full;
+					@apply text-xl xl:text-2xl;
+
+					/* & h3 {
+						@apply text-3xl;
+					} */
+				}
+			}
 		}
 	}
 }

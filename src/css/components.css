@@ -4,10 +4,10 @@
 
 @layer components {
 	.btn-social {
-		@apply text-6xl mx-4;
+		@apply text-5xl mx-4;
 
 		& svg {
-			@apply m-4 text-fg/50 hover:text-primary hover:scale-150;
+			@apply m-4 text-fg/50 hover:text-primary hover:scale-125;
 		}
 	}
 }
