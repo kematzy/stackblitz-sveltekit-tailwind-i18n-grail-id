@@ -1,5 +1,5 @@
 <script>
-  import { _, locale, locales } from 'svelte-i18n'
+  import { _ } from 'svelte-i18n'
   import WrapperSection from '$lib/components/ui/WrapperSection.svelte'
 </script>
 

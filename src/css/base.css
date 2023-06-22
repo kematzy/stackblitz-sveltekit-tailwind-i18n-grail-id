@@ -43,7 +43,6 @@
 		@apply flex items-center justify-end pb-0 pr-4 w-full;
 		@apply sticky h-12 top-0 right-0 z-30;
 		@apply bg-bkgr text-fg;
-		/* @apply shadow shadow-fg/10; */
 	}
 
 	#header-logo {
@@ -105,8 +104,6 @@
 			@apply z-10;
 			@apply w-full absolute bottom-0 pt-16 pb-12 px-4 md:px-8 rounded-t-md text-center md:text-left;
 			@apply bg-gradient-to-t from-bkgr via-bkgr/50 via-70% to-transparent;
-			/* @apply bg-gradient-to-t from-hero-bg to-transparent; */
-			/* @apply bg-bkgr; */
 		}
 
 		& h1 {
@@ -119,7 +116,7 @@
 		}
 
 		& .hero-subheadline {
-			@apply text-fg/70 mt-8 leading-tight lg:w-2/3;
+			@apply text-fg/80 mt-8 leading-tight lg:w-2/3;
 			font-size: clamp(1.25rem, 5vw, 2rem);
 		}
 	}
@@ -138,10 +135,6 @@
 				&:first-child {
 					@apply md:col-span-2 xl:col-span-1 md:w-4/5 lg:w-2/3 xl:w-full;
 					@apply text-xl xl:text-2xl;
-
-					/* & h3 {
-						@apply text-3xl;
-					} */
 				}
 			}
 		}
